@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura ONE</title>
+
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <picture class="header__picture">
+                <img class="header__img" src="img/logo.svg" alt="">
+            </picture>
+        </header>
+    
+        <main class="main">
+            <section class="seccion-input">
+                <textarea class="textarea-input" onkeyup="mayus(this)" name="" id="" cols="20" rows="10" placeholder="Ingrese el texto aquí..." autofocus></textarea>
+                <div class="informacion">
+                    <h6><span><img src="img/vector.svg" alt=""></span> Solo letras minúsculas y sin acentos.</h6>
+                </div>
+    
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+    
+            <section class="seccion-output">
+                <textarea class="textarea-output" name="" id="" cols="20" rows="10" readonly></textarea>
+                
+                <div class="seccion-output__mensaje">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que dees encriptar o desencriptar</p>
+                </div>
+                
+                <div class="botones">
+                    <button class="btn-copiar" onclick="botonCopiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    
+        <footer>
+          <p class="">&copy; 2023 Miguel Trujillo</p>
+  
+          <a href="https://migantrujilloa.github.io/" class="logopersonal" target="_blank">
+            <img src="img/logo.png" alt="" role="img" aria-label="Bootstrap">
+          </a>
+  
+          <div class="redes-sociales">
+            <a href="http://linkedin.com/in/migueltrujilloaguirre" target="_blank">
+              <img src="img/social/linkedin.svg" alt="">
+            </a>
+            <a href="https://github.com/migantrujilloa/" target="_blank">
+              <img src="img/social/github.svg" alt="">
+            </a>
+            <a href="https://twitter.com/migantrujilloa" target="_blank">
+              <img src="img/social/twitter.svg" alt="">
+            </a>
+            <a href="https://www.youtube.com/@informatic?sub_confirmation=1" target="_blank">
+              <img src="img/social/youtube.svg" alt="">
+            </a>
+            <a href="https://www.tiktok.com/@informaticakademy" target="_blank">
+              <img src="img/social/tiktok.svg" alt="">
+            </a>
+            <a href="https://www.facebook.com/informatic.akademy" target="_blank">
+              <img src="img/social/facebook.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/informaticakademy/" target="_blank">
+              <img src="img/social/instagram.svg" alt="">
+            </a>
+          </div>
+        </footer>
+
+    <!--Librería para modificar los alerts-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/switAlert.js"></script>
+    
+    <!-- script propio -->
+    <script src="js/script.js"></script>
+</body>
+</html>

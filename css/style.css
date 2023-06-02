@@ -1,0 +1,355 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #E5E5E5;
+}
+
+.header__img{
+    margin-top: 40px;
+}
+
+.main{
+    display: flex;  
+    gap: 0;
+    align-items: center;
+}
+
+.seccion-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    width: 610px;
+    height: 535px;
+    position: relative;
+}
+
+.seccion-output{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 300px;
+    height: 580px;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+.textarea-input{
+    border: none;
+    height: 340px;
+    background-color:  #E5E5E5;
+    max-width: 800px;
+    resize: none;
+    font-size: 1.6rem;
+    color: #0A3871;
+}
+
+.textarea-input:focus{
+    outline: none;
+}
+
+.textarea-output{
+    border: none;
+    background-image: url("../img/muñeco.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+    padding: 32px;
+    resize: none;
+    font-size: 1.2rem;
+}
+
+.textarea-output:focus{
+    outline: none;
+}
+
+::placeholder{color: #0A3871;}
+
+.informacion{
+    display: center;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 90px;
+    font-size: 12px;
+}
+
+.informacion h6{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.informacion span{
+    width: 16px;
+    height: 16px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.botones{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.btn-encriptar{
+   border-radius: 20px;
+   width:300px;
+   height:55px;
+   color: #ffffff;
+   background-color: #0A3871;
+   border: 2px solid #0A3871;
+   cursor: pointer;
+}
+
+.btn-desencriptar{
+   border-radius: 20px;
+   width:300px;
+   height:55px;
+   border: 2px solid #0A3871;
+   background-color: #c3c3c3;
+   color: #0A3871;
+    cursor: pointer;
+}
+
+.btn-copiar{
+    border-radius: 20px;
+    width: 200px;
+    height:55px;
+    border: 2px solid #0A3871;
+    background-color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.seccion-output__mensaje{
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seccion-output__mensaje p{
+    text-align: center;
+}
+
+.seccion-output__mensaje p:first-child{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.seccion-output__mensaje p:last-child{
+    font-size: 1rem;
+}
+
+
+/*Footer*/
+.footer{
+    background: #1c2127 !important;
+    padding: 0;
+}
+
+.footer p, a{
+    color: #ffffff !important;
+}
+
+.footer a{
+    color: #ffffff !important;
+}
+
+
+
+/*Footer*/
+footer{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #1c2127;
+    color: #fcfcfc;
+    padding: 10px 0;
+    margin-top: 40px;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.redes-sociales a{
+    width: 30px;
+}
+
+.logopersonal img{
+    width: 40px;
+}
+
+
+@media screen and (max-width: 1150px){
+    .seccion-input{
+        width: 560px;
+        height: 535px;
+    }
+    
+    .seccion-output{
+        width: 290px;
+        height: 580px;
+    }
+}
+@media screen and (max-width: 960px){
+    .seccion-input{
+        width: 350px;
+        height: 535px;
+    }
+    
+    .seccion-output{
+        width: 240px;
+        height: 580px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .seccion-input{
+        width: 300px;
+        height: 535px;
+    }
+    
+    .seccion-output{
+        width: 200px;
+        height: 580px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .header__img{
+        margin-top: 20px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-input{
+        width: 100%;
+        height: 500px;
+        margin-top: 0;
+    }
+    
+    .seccion-output{
+        width: 95%;
+        height: 100%;
+        margin-top: 0;
+        padding-bottom: 15px;
+    }
+
+    .textarea-output{
+        padding: 80px 32px;
+        width: 250px;
+    }
+
+    footer{flex-direction: column;
+        background: #1c2127;
+        color: #fcfcfc;
+        padding: 10px 0;
+        margin-top: 40px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .botones{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px;
+    }
+    .informacion{
+        bottom: 130px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__img{
+        margin-top: 20px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-input{
+        width: 70%;
+        margin-top: 0;
+        align-items: center;
+    }
+    
+    .seccion-output{
+        width: 70%;
+        height: 100%;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .textarea-input{
+        padding: 30px;
+        width: 100%;
+    }
+
+    .informacion{
+        bottom: 130px;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 10px;
+        width: 80%;
+    }
+
+    .btn-encriptar, .btn-desencriptar, .btn-copiar{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .redes-sociales a{
+        width: 20px;
+    }
+
+}
